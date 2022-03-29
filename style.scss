@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Inspiration:regular);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:300,300italic,regular,italic,700,700italic,900,900italic);
+
+$color-primary: #d67d19;
+$color-secondary: #5d2502;
+$font-one: 'Inspiration';
+$font-two: 'Merriweather';
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(pexels-valeria-boltneva-1484516.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 212, 255, 0) 100%);
+
+        .inside-nav {
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            padding-top: 2rem;
+            margin: 0 auto;
+            height: 150px;
+            justify-content: space-between;
+            font-family: 'Merriweather';
+
+            .nav-list {
+                margin-top: 1rem;
+                display: flex;
+                width: 50%;
+
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    justify-content: space-around;
+
+                    li {
+                        list-style: none;
+
+
+                        a {
+                            color: white;
+                            text-decoration: none;
+                            font-weight: bold;
+                            border: none;
+                            font-size: 1.2rem;
+                            padding: 0.5rem;
+                            transition: all 0.3s ease-in-out;
+
+                            &:hover {
+                                border: 1px solid white;
+                                text-decoration: double underline;
+                            }
+                        }
+
+                        .reserva {
+                            color: rgb(190, 149, 35);
+                        }
+                    }
+                }
+            }
+
+            .social {
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+
+            .logo-container {
+                width: 150px;
+                height: 150px;
+
+            }
+        }
+    }
+
+    #inicio {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+
+        .texto {
+            display: flex;
+            flex-direction: column;
+            color: white;
+
+            font-family: $font-one;
+            width: 50%;
+
+            h1 {
+                font-weight: normal;
+                font-size: 10rem;
+
+            }
+
+            h2 {
+                font-weight: lighter;
+                font-size: 6rem;
+            }
+        }
+
+        .cta {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+
+            .button-cta {
+                font-family: $font-two;
+                background-color: white;
+                padding: 2rem;
+                transition: background-color 0.3s ease-in-out;
+
+                &:hover {
+                    background-color: $color-primary;
+                    color: white;
+
+                    a {
+                        border: double white;
+                    }
+                }
+
+                &:nth-child(1) {
+                    margin-bottom: 2rem;
+                }
+
+
+
+                a {
+                    color: black;
+                    text-decoration: none;
+                    font-size: 2rem;
+                    border: double $color-primary;
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+
+}
+
+#menu {
+    width: 100%;
+    min-height: 600px;
+    background-color: white;
+    display: flex;
+
+    .menu-container {
+        width: 100%;
+        margin: 2rem;
+        border: double $color-primary;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        overflow: hidden;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            width: 35%;
+            height: 100%;
+            justify-content: space-between;
+            padding: 3rem;
+
+
+            h2 {
+                font-family: $font-two;
+                font-size: 3rem;
+                font-weight: bold;
+                margin-bottom: 2rem;
+                color: $color-secondary;
+            }
+
+            .menu-display {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                .item {
+                    display: flex;
+                    flex-direction: column;
+                    width: 200px;
+                    height: 250px;
+                    align-items: center;
+                    margin: 1rem;
+
+                    .title {
+                        text-align: center;
+
+                        p {
+                            font-size: 2rem;
+                            font-family: $font-one;
+
+                        }
+
+
+                    }
+
+                    .img {
+                        display: flex;
+
+                        img {
+                            object-fit: contain;
+                            width: 200px;
+                            height: auto;
+                        }
+
+
+                    }
+                }
+            }
+        }
+    }
+}
