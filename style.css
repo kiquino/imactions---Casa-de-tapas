@@ -467,6 +467,43 @@ header #inicio .cta .button-cta a {
   display: none;
 }
 
+#testimonial .mobile #c-mobile .carousel-inner {
+  height: 70vh;
+}
+
+#testimonial .mobile #c-mobile .carousel-inner .carousel-item {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  background-color: black;
+}
+
+#testimonial .mobile #c-mobile .carousel-inner .carousel-item img {
+  width: 60%;
+  height: auto;
+}
+
+#testimonial .mobile #c-mobile .carousel-inner .carousel-item .texto {
+  position: absolute;
+  height: 100%;
+  top: 25%;
+  left: 40%;
+  width: 50%;
+  text-align: center;
+}
+
+#testimonial .mobile #c-mobile .carousel-inner .carousel-item .texto q {
+  font-family: "Merriweather";
+  font-size: large;
+  color: white;
+}
+
+#testimonial .mobile #c-mobile .carousel-inner .carousel-item .texto cite {
+  font-family: "Inspiration";
+  font-size: 2rem;
+  color: white;
+}
+
 #reservas {
   width: 100%;
   min-height: 600px;
@@ -730,6 +767,9 @@ header #inicio .cta .button-cta a {
             flex-direction: column;
     height: auto;
   }
+  #menu .menu-container {
+    margin: 1rem;
+  }
   #menu .menu-container .content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -823,6 +863,47 @@ header #inicio .cta .button-cta a {
   #menu .menu-container .decor img {
     width: 800px;
     height: auto;
+  }
+  #testimonial {
+    width: 100%;
+  }
+  #testimonial .screen {
+    display: none;
+  }
+  #testimonial .screen #c-screen .carousel-inner {
+    height: 60vh;
+  }
+  #testimonial .screen #c-screen .carousel-inner .carousel-item {
+    position: relative;
+    width: 100%;
+    background-color: black;
+  }
+  #testimonial .screen #c-screen .carousel-inner .carousel-item img {
+    width: 30%;
+    height: auto;
+  }
+  #testimonial .screen #c-screen .carousel-inner .carousel-item .texto {
+    position: absolute;
+    height: 100%;
+    top: 25%;
+    left: 40%;
+    width: 40%;
+    text-align: center;
+  }
+  #testimonial .screen #c-screen .carousel-inner .carousel-item .texto q {
+    font-family: "Merriweather";
+    font-size: large;
+    color: white;
+  }
+  #testimonial .screen #c-screen .carousel-inner .carousel-item .texto cite {
+    font-family: "Inspiration";
+    font-size: 3rem;
+    color: white;
+  }
+  #testimonial .mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 /*# sourceMappingURL=style.css.map */
