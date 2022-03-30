@@ -1508,12 +1508,12 @@ footer .footer-content .footer-social ul li a {
     display: flex;
   }
   #testimonial .mobile #c-mobile .carousel-inner {
-    height: 100vh;
+    height: auto;
   }
   #testimonial .mobile #c-mobile .carousel-inner .carousel-item {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: black;
   }
   #testimonial .mobile #c-mobile .carousel-inner .carousel-item img {
