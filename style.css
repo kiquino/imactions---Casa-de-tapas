@@ -20,6 +20,9 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 header nav {
@@ -130,6 +133,7 @@ header #inicio {
       -ms-flex-align: center;
           align-items: center;
   width: 80%;
+  height: 80%;
   margin: 0 auto;
 }
 
@@ -148,7 +152,7 @@ header #inicio .texto {
 
 header #inicio .texto h1 {
   font-weight: normal;
-  font-size: 10rem;
+  font-size: 8rem;
 }
 
 header #inicio .texto h2 {
@@ -297,7 +301,8 @@ header #inicio .cta .button-cta a {
 }
 
 #menu .menu-container .content .menu-display .item .title p {
-  font-size: 2rem;
+  font-size: 3rem;
+  font-weight: 600;
   font-family: "Inspiration";
 }
 
@@ -328,5 +333,88 @@ header #inicio .cta .button-cta a {
 #menu .menu-container .decor img {
   width: 800px;
   height: auto;
+}
+
+#testimonial {
+  width: 100%;
+}
+
+#testimonial .screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#testimonial .screen #c-screen .carousel-inner {
+  height: 60vh;
+}
+
+#testimonial .screen #c-screen .carousel-inner .carousel-item {
+  position: relative;
+  width: 100%;
+  background-color: black;
+}
+
+#testimonial .screen #c-screen .carousel-inner .carousel-item img {
+  width: 30%;
+  height: auto;
+}
+
+#testimonial .screen #c-screen .carousel-inner .carousel-item .texto {
+  position: absolute;
+  height: 100%;
+  top: 25%;
+  left: 40%;
+  width: 40%;
+  text-align: center;
+}
+
+#testimonial .screen #c-screen .carousel-inner .carousel-item .texto q {
+  font-family: "Merriweather";
+  font-size: large;
+  color: white;
+}
+
+#testimonial .screen #c-screen .carousel-inner .carousel-item .texto cite {
+  font-family: "Inspiration";
+  font-size: 3rem;
+  color: white;
+}
+
+#testimonial .mobile {
+  display: none;
+}
+
+#reservas {
+  width: 100%;
+  min-height: 600px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+}
+
+#reservas .reservas-container {
+  width: 95%;
+  margin: 2rem;
+  border: double #d67d19;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow-x: hidden;
+  height: auto;
+  position: relative;
 }
 /*# sourceMappingURL=style.css.map */

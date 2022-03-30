@@ -8,6 +8,7 @@
     <meta name="og:description" content="Restaurant de muchas cosas ricas" />
     <meta name="og:title" content="La Casona de Diego" />
     <meta name="og:image" content="https://www.collinsdictionary.com/images/thumb/restaurant_135621509_250.jpg" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>La Casona de Diego</title>
 </head>
@@ -67,7 +68,7 @@
         </div>
     </header>
     <main>
-        <div id="menu">
+        <section id="menu">
             <div class="menu-container">
                 <div class="content">
                     <h2>Menú</h2>
@@ -82,26 +83,26 @@
                         </div>
                         <div class="item">
                             <div class="title">
-                                <p>Carnes</p>
+                                <p>Ensaladas</p>
                             </div>
                             <div class="img">
-                                <img src="pexels-denys-gromov-4669214.jpg" alt="">
+                                <img src="pexels-roman-odintsov-4869359.jpg" alt="">
                             </div>
                         </div>
                         <div class="item">
                             <div class="title">
-                                <p>Carnes</p>
+                                <p>Bodega</p>
                             </div>
                             <div class="img">
-                                <img src="pexels-denys-gromov-4669214.jpg" alt="">
+                                <img src="pexels-valeria-boltneva-1123260.jpg" alt="">
                             </div>
                         </div>
                         <div class="item">
                             <div class="title">
-                                <p>Carnes</p>
+                                <p>Picadas</p>
                             </div>
                             <div class="img">
-                                <img src="pexels-denys-gromov-4669214.jpg" alt="">
+                                <img src="picada-scaled.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -110,8 +111,80 @@
                     <img src="menu.png" alt="">
                 </div>
             </div>
-        </div>
+        </section>
+        <section id="testimonial">
+            <div class="screen">
+                <div id="c-screen" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#c-screen" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#c-screen" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#c-screen" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="pexels-cottonbro-4255485.jpg" class="d-block " alt="...">
+                            <div class="texto">
+                                <q>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quibusdam deleniti a
+                                    similique dolorum quaerat nisi provident minima est optio eos ex non sequi sint
+                                    laudantium vero reiciendis consectetur in.
+                                </q>
+                                <cite>
+                                    - Di Giorno.
+                                </cite>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="pexels-cottonbro-4255485.jpg" class="d-block " alt="...">
+                            <div class="texto">
+                                <q>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quibusdam deleniti a
+                                    similique dolorum quaerat nisi provident minima est optio eos ex non sequi sint
+                                    laudantium vero reiciendis consectetur in.
+                                </q>
+                                <cite>
+                                    - Di Giorno.
+                                </cite>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="pexels-cottonbro-4255485.jpg" class="d-block " alt="...">
+                            <div class="texto">
+                                <q>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quibusdam deleniti a
+                                    similique dolorum quaerat nisi provident minima est optio eos ex non sequi sint
+                                    laudantium vero reiciendis consectetur in.
+                                </q>
+                                <cite>
+                                    - Di Giorno.
+                                </cite>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#c-screen" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#c-screen" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="mobile"></div>
+        </section>
+        <section id="reservas">
+            <div class="reservas-container">
+
+            </div>
+        </section>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js">
+    </script>
     <script src="script.js"></script>
 </body>
 

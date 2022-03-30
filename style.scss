@@ -21,6 +21,7 @@ header {
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
     nav {
         width: 100%;
@@ -97,6 +98,7 @@ header {
         justify-content: space-between;
         align-items: center;
         width: 80%;
+        height: 80%;
         margin: 0 auto;
 
         .texto {
@@ -109,7 +111,7 @@ header {
 
             h1 {
                 font-weight: normal;
-                font-size: 10rem;
+                font-size: 8rem;
 
             }
 
@@ -218,7 +220,8 @@ header {
                         text-align: center;
 
                         p {
-                            font-size: 2rem;
+                            font-size: 3rem;
+                            font-weight: 600;
                             font-family: $font-one;
 
                         }
@@ -253,5 +256,80 @@ header {
                 height: auto;
             }
         }
+    }
+}
+
+#testimonial {
+    width: 100%;
+
+    .screen {
+        display: flex;
+
+        #c-screen {
+            .carousel-inner {
+                height: 60vh;
+
+                .carousel-item {
+
+                    position: relative;
+                    width: 100%;
+                    background-color: black;
+
+                    img {
+                        width: 30%;
+                        height: auto;
+                    }
+
+                    .texto {
+                        position: absolute;
+
+                        height: 100%;
+                        top: 25%;
+                        left: 40%;
+                        width: 40%;
+                        text-align: center;
+
+                        q {
+
+                            font-family: $font-two;
+                            font-size: large;
+                            color: white;
+
+                        }
+
+                        cite {
+                            font-family: $font-one;
+                            font-size: 3rem;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .mobile {
+        display: none;
+    }
+}
+
+#reservas {
+    width: 100%;
+    min-height: 600px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+
+    .reservas-container {
+        width: 95%;
+        margin: 2rem;
+        border: double $color-primary;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        overflow-x: hidden;
+        height: auto;
+        position: relative;
     }
 }
