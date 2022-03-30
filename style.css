@@ -374,6 +374,10 @@ header #inicio .cta .button-cta a {
   border-right: 2px solid #d67d19;
 }
 
+#menu .menu-container .content .menu-display .item:hover {
+  background-color: #d67d19;
+}
+
 #menu .menu-container .content .menu-display .item .title {
   text-align: center;
 }

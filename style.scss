@@ -296,6 +296,10 @@ header {
                     border-bottom: 2px solid $color-primary;
                     border-right: 2px solid $color-primary;
 
+                    &:hover {
+                        background-color: #d67d19;
+                    }
+
                     .title {
                         text-align: center;
 
