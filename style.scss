@@ -543,6 +543,63 @@ footer {
     width: 100%;
     background-color: $color-primary;
     margin: 0;
+
+    .footer-content {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        padding-top: 2rem;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+        align-items: center;
+        justify-content: flex-start;
+
+        .footer-logo {
+            padding-right: 2rem;
+
+            img {
+                width: 100px;
+                height: auto;
+            }
+        }
+
+        .footer-menu {
+            ul {
+                li {
+                    list-style: none;
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-social {
+            margin-left: auto;
+
+            ul {
+                display: flex;
+                flex-direction: row;
+
+
+                li {
+                    list-style: none;
+                    margin: 0.5rem;
+
+
+                    a {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width:1300px) {

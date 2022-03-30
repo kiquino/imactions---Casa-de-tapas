@@ -631,6 +631,71 @@ footer {
   margin: 0;
 }
 
+footer .footer-content {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 2rem;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+footer .footer-content .footer-logo {
+  padding-right: 2rem;
+}
+
+footer .footer-content .footer-logo img {
+  width: 100px;
+  height: auto;
+}
+
+footer .footer-content .footer-menu ul li {
+  list-style: none;
+}
+
+footer .footer-content .footer-menu ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .footer-content .footer-menu ul li a:hover {
+  text-decoration: underline;
+}
+
+footer .footer-content .footer-social {
+  margin-left: auto;
+}
+
+footer .footer-content .footer-social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .footer-content .footer-social ul li {
+  list-style: none;
+  margin: 0.5rem;
+}
+
+footer .footer-content .footer-social ul li a {
+  color: white;
+}
+
 @media screen and (max-width: 1300px) {
   header #inicio .texto h1 {
     font-size: 7rem;
