@@ -209,10 +209,15 @@ header #inicio .cta .button-cta a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
 }
 
 #menu .menu-container {
-  width: 100%;
+  width: 95%;
   margin: 2rem;
   border: double #d67d19;
   display: -webkit-box;
@@ -225,7 +230,9 @@ header #inicio .cta .button-cta a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  overflow: hidden;
+  overflow-x: hidden;
+  height: auto;
+  position: relative;
 }
 
 #menu .menu-container .content {
@@ -236,7 +243,7 @@ header #inicio .cta .button-cta a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 35%;
+  width: 50%;
   height: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -262,6 +269,7 @@ header #inicio .cta .button-cta a {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-top: 5rem;
 }
 
 #menu .menu-container .content .menu-display .item {
@@ -272,12 +280,16 @@ header #inicio .cta .button-cta a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 200px;
-  height: 250px;
+  width: 350px;
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin: 1rem;
+  border-radius: 10px;
+  border-bottom: 2px solid #d67d19;
+  border-right: 2px solid #d67d19;
 }
 
 #menu .menu-container .content .menu-display .item .title {
@@ -298,7 +310,23 @@ header #inicio .cta .button-cta a {
 #menu .menu-container .content .menu-display .item .img img {
   -o-object-fit: contain;
      object-fit: contain;
-  width: 200px;
+  width: 350px;
+  height: auto;
+  border-radius: 10px;
+}
+
+#menu .menu-container .decor {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#menu .menu-container .decor img {
+  width: 800px;
   height: auto;
 }
 /*# sourceMappingURL=style.css.map */
