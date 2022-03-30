@@ -338,7 +338,7 @@ header #inicio .cta .button-cta a {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 2rem;
-  color: #5d2502;
+  color: #532d01;
 }
 
 #menu .menu-container .content .menu-display {
@@ -563,7 +563,7 @@ header #inicio .cta .button-cta a {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 2rem;
-  color: #5d2502;
+  color: #532d01;
 }
 
 #reservas .reservas-container .content .calendar-container {
@@ -611,9 +611,9 @@ header #inicio .cta .button-cta a {
 
 #reservas .reservas-container form button {
   width: 30%;
-  border: double 0.5rem #5d2502;
+  border: double 0.5rem #532d01;
   background-color: white;
-  color: #5d2502;
+  color: #532d01;
   font-family: "Merriweather";
   font-size: 1.5rem;
   font-weight: 700;
@@ -743,7 +743,7 @@ footer .footer-content .footer-social ul li a {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 2rem;
-    color: #5d2502;
+    color: #532d01;
   }
   #menu .menu-container .content .menu-display {
     display: -webkit-box;
@@ -865,7 +865,7 @@ footer .footer-content .footer-social ul li a {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 2rem;
-    color: #5d2502;
+    color: #532d01;
   }
   #reservas .reservas-container .content .calendar-container {
     margin-top: 4rem;
@@ -907,9 +907,9 @@ footer .footer-content .footer-social ul li a {
   }
   #reservas .reservas-container form button {
     width: 50%;
-    border: double 0.5rem #5d2502;
+    border: double 0.5rem #532d01;
     background-color: white;
-    color: #5d2502;
+    color: #532d01;
     font-family: "Merriweather";
     font-size: 1.5rem;
     font-weight: 700;
@@ -1067,7 +1067,7 @@ footer .footer-content .footer-social ul li a {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 2rem;
-    color: #5d2502;
+    color: #532d01;
   }
   #menu .menu-container .content .menu-display {
     display: -webkit-box;
@@ -1232,7 +1232,7 @@ footer .footer-content .footer-social ul li a {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 2rem;
-    color: #5d2502;
+    color: #532d01;
   }
   #reservas .reservas-container .content .calendar-container {
     margin-top: 4rem;
@@ -1274,9 +1274,9 @@ footer .footer-content .footer-social ul li a {
   }
   #reservas .reservas-container form button {
     width: 50%;
-    border: double 0.5rem #5d2502;
+    border: double 0.5rem #532d01;
     background-color: white;
-    color: #5d2502;
+    color: #532d01;
     font-family: "Merriweather";
     font-size: 1.5rem;
     font-weight: 700;
@@ -1345,7 +1345,7 @@ footer .footer-content .footer-social ul li a {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 2rem;
-    color: #5d2502;
+    color: #532d01;
   }
   #reservas .reservas-container .content .calendar-container {
     margin-top: 4rem;
@@ -1388,9 +1388,9 @@ footer .footer-content .footer-social ul li a {
   }
   #reservas .reservas-container form button {
     width: 100%;
-    border: double 0.5rem #5d2502;
+    border: double 0.5rem #532d01;
     background-color: white;
-    color: #5d2502;
+    color: #532d01;
     font-family: "Merriweather";
     font-size: 1.5rem;
     font-weight: 700;

@@ -23,14 +23,17 @@ $(function () {
                 title: 'Oh algo salio mal',
                 text: 'Por favor revise que la fecha este seleccionada',
                 icon: 'error',
-                confirmButtonText: 'Volver'
+                confirmButtonText: 'Volver',
+                confirmButtonColor: '#d67d19',
+
             })
         } else {
             Swal.fire({
                 title: 'Bon Appetite',
                 text: 'Su reserva se ha realizado con éxito',
                 icon: 'success',
-                confirmButtonText: 'Volver'
+                confirmButtonText: 'Volver',
+                confirmButtonColor: '#d67d19',
             })
         }
 
