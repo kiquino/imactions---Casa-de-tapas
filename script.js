@@ -16,5 +16,13 @@ $(function () {
 
 
     });
-
+    $('#btnReserve').click(function (event) {
+        event.preventDefault();
+        Swal.fire({
+            title: 'Bon Appetite',
+            text: 'Su reserva se ha realizado con éxito',
+            icon: 'success',
+            confirmButtonText: 'Volver'
+        })
+    })
 })
