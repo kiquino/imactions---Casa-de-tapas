@@ -39,7 +39,7 @@ header nav {
   background: linear-gradient(180deg, black 0%, rgba(0, 212, 255, 0) 100%);
 }
 
-header nav .inside-nav {
+header nav .desktop-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,9 +55,12 @@ header nav .inside-nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-family: 'Merriweather';
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-header nav .inside-nav .nav-list {
+header nav .desktop-nav .nav-list {
   margin-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -65,7 +68,7 @@ header nav .inside-nav .nav-list {
   width: 50%;
 }
 
-header nav .inside-nav .nav-list ul {
+header nav .desktop-nav .nav-list ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,11 +81,11 @@ header nav .inside-nav .nav-list ul {
       justify-content: space-around;
 }
 
-header nav .inside-nav .nav-list ul li {
+header nav .desktop-nav .nav-list ul li {
   list-style: none;
 }
 
-header nav .inside-nav .nav-list ul li a {
+header nav .desktop-nav .nav-list ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -93,17 +96,17 @@ header nav .inside-nav .nav-list ul li a {
   transition: all 0.3s ease-in-out;
 }
 
-header nav .inside-nav .nav-list ul li a:hover {
+header nav .desktop-nav .nav-list ul li a:hover {
   border: 1px solid white;
   -webkit-text-decoration: double underline;
           text-decoration: double underline;
 }
 
-header nav .inside-nav .nav-list ul li .reserva {
+header nav .desktop-nav .nav-list ul li .reserva {
   color: #be9523;
 }
 
-header nav .inside-nav .social ul {
+header nav .desktop-nav .social ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,9 +116,83 @@ header nav .inside-nav .social ul {
           flex-direction: row;
 }
 
-header nav .inside-nav .logo-container {
+header nav .desktop-nav .logo-container {
   width: 150px;
   height: 150px;
+}
+
+header nav .mobile-nav {
+  display: none;
+}
+
+header nav .mobile-nav a img {
+  width: 50px;
+  height: auto;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+header nav .mobile-nav a img:hover {
+  -webkit-transform: scaleX(1.1);
+          transform: scaleX(1.1);
+}
+
+header nav .mobile-nav .offcanvas {
+  background-color: black;
+  color: white;
+}
+
+header nav .mobile-nav .offcanvas .offcanvas-body .menu-list ul:nth-child(1) li {
+  list-style: none;
+  margin: 0.5rem;
+}
+
+header nav .mobile-nav .offcanvas .offcanvas-body .menu-list ul:nth-child(1) li .reserva {
+  color: #d67d19;
+}
+
+header nav .mobile-nav .offcanvas .offcanvas-body .menu-list ul:nth-child(1) li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+  font-family: "Merriweather";
+  padding: 0.5rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border: none;
+}
+
+header nav .mobile-nav .offcanvas .offcanvas-body .menu-list ul:nth-child(1) li a:hover {
+  border: 1px solid white;
+  -webkit-text-decoration: double underline;
+          text-decoration: double underline;
+}
+
+header nav .mobile-nav .offcanvas .offcanvas-body .menu-list ul:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header nav .mobile-nav .offcanvas .offcanvas-body .menu-list ul:nth-child(2) li {
+  list-style: none;
+}
+
+header nav .mobile-nav .offcanvas .offcanvas-body .menu-list ul:nth-child(2) li a img {
+  -webkit-transition: none;
+  transition: none;
+}
+
+header nav .mobile-nav .offcanvas .offcanvas-body .menu-list ul:nth-child(2) li a img:hover {
+  -webkit-transform: none;
+          transform: none;
 }
 
 header #inicio {
@@ -247,12 +324,13 @@ header #inicio .cta .button-cta a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50%;
+  width: 80%;
   height: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 3rem;
+  z-index: 1;
 }
 
 #menu .menu-container .content h2 {
@@ -321,6 +399,9 @@ header #inicio .cta .button-cta a {
 }
 
 #menu .menu-container .decor {
+  position: absolute;
+  right: 0;
+  bottom: 0;
   width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -328,6 +409,7 @@ header #inicio .cta .button-cta a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  z-index: 0;
 }
 
 #menu .menu-container .decor img {
@@ -416,5 +498,331 @@ header #inicio .cta .button-cta a {
   overflow-x: hidden;
   height: auto;
   position: relative;
+}
+
+@media screen and (max-width: 1300px) {
+  header #inicio .texto h1 {
+    font-size: 7rem;
+  }
+  header #inicio .texto h2 {
+    font-size: 4rem;
+  }
+  #menu {
+    width: 100%;
+    min-height: 600px;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  #menu .menu-container .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 3rem;
+    z-index: 1;
+  }
+  #menu .menu-container .content h2 {
+    font-family: "Merriweather";
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #5d2502;
+  }
+  #menu .menu-container .content .menu-display {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 5rem;
+  }
+  #menu .menu-container .content .menu-display .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 350px;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1rem;
+    border-radius: 10px;
+    border-bottom: 2px solid #d67d19;
+    border-right: 2px solid #d67d19;
+  }
+  #menu .menu-container .content .menu-display .item .title {
+    text-align: center;
+  }
+  #menu .menu-container .content .menu-display .item .title p {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: "Inspiration";
+  }
+  #menu .menu-container .content .menu-display .item .img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #menu .menu-container .content .menu-display .item .img img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+  }
+  #menu .menu-container .decor {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    z-index: 0;
+  }
+  #menu .menu-container .decor img {
+    width: 800px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  header nav {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background: black;
+    background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 212, 255, 0)));
+    background: linear-gradient(180deg, black 0%, rgba(0, 212, 255, 0) 100%);
+  }
+  header nav .desktop-nav {
+    display: none;
+  }
+  header nav .mobile-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header #inicio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  header #inicio .texto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: white;
+    text-align: center;
+    font-family: "Inspiration";
+    width: 80%;
+  }
+  header #inicio .texto h1 {
+    font-weight: normal;
+    font-size: 7rem;
+  }
+  header #inicio .texto h2 {
+    font-weight: lighter;
+    font-size: 3.5rem;
+  }
+  header #inicio .cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  header #inicio .cta .button-cta {
+    font-family: "Merriweather";
+    background-color: white;
+    padding: 0.9rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+  }
+  header #inicio .cta .button-cta:hover {
+    background-color: #d67d19;
+    color: white;
+  }
+  header #inicio .cta .button-cta:hover a {
+    border: double white;
+  }
+  header #inicio .cta .button-cta:nth-child(1) {
+    margin-bottom: 0;
+  }
+  header #inicio .cta .button-cta a {
+    color: black;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border: double #d67d19;
+    padding: 1rem;
+  }
+  #menu {
+    width: 100%;
+    min-height: 600px;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  #menu .menu-container .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 3rem;
+    z-index: 1;
+    background-color: rgba(255, 254, 254, 0.3);
+  }
+  #menu .menu-container .content h2 {
+    font-family: "Merriweather";
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #5d2502;
+  }
+  #menu .menu-container .content .menu-display {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 5rem;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #menu .menu-container .content .menu-display .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 200px;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1rem;
+    border-radius: 10px;
+    border-bottom: 2px solid #d67d19;
+    border-right: 2px solid #d67d19;
+  }
+  #menu .menu-container .content .menu-display .item .title {
+    text-align: center;
+  }
+  #menu .menu-container .content .menu-display .item .title p {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: "Inspiration";
+  }
+  #menu .menu-container .content .menu-display .item .img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #menu .menu-container .content .menu-display .item .img img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+  }
+  #menu .menu-container .decor {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    z-index: 0;
+  }
+  #menu .menu-container .decor img {
+    width: 800px;
+    height: auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */
