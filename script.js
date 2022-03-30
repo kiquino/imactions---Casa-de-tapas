@@ -18,11 +18,21 @@ $(function () {
     });
     $('#btnReserve').click(function (event) {
         event.preventDefault();
-        Swal.fire({
-            title: 'Bon Appetite',
-            text: 'Su reserva se ha realizado con éxito',
-            icon: 'success',
-            confirmButtonText: 'Volver'
-        })
+        if ($('#date').val() == "") {
+            Swal.fire({
+                title: 'Oh algo salio mal',
+                text: 'Por favor revise que la fecha este seleccionada',
+                icon: 'error',
+                confirmButtonText: 'Volver'
+            })
+        } else {
+            Swal.fire({
+                title: 'Bon Appetite',
+                text: 'Su reserva se ha realizado con éxito',
+                icon: 'success',
+                confirmButtonText: 'Volver'
+            })
+        }
+
     })
 })
