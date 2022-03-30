@@ -457,11 +457,92 @@ header {
         border: double $color-primary;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-start;
         overflow-x: hidden;
+        align-items: center;
         height: auto;
         position: relative;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            min-width: 50%;
+            height: 100%;
+
+            padding: 3rem;
+            z-index: 1;
+
+
+            h2 {
+                font-family: $font-two;
+                font-size: 3rem;
+                font-weight: bold;
+                margin-bottom: 2rem;
+                color: $color-secondary;
+            }
+
+            .calendar-container {
+                margin-top: 4rem;
+                width: 40%;
+                margin-left: 10rem;
+
+            }
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+
+            label {
+                display: flex;
+                flex-direction: column;
+                font-family: $font-two;
+                font-weight: 600;
+                font-size: 1.1rem;
+                color: $color-primary;
+                margin: 0.5rem 0;
+
+                img {
+                    width: 30px;
+                    height: auto;
+                }
+
+                input {
+                    width: 30%;
+                    border: none;
+                    border-bottom: 1px solid $color-primary;
+                }
+            }
+
+            button {
+                width: 30%;
+                border: double 0.5rem $color-secondary;
+
+                background-color: white;
+                color: $color-secondary;
+                font-family: $font-two;
+                font-size: 1.5rem;
+                font-weight: 700;
+                margin: 0.5rem 0;
+                padding: 1rem;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    background-color: #5d2502;
+                    color: white;
+                    border: double 0.5rem white;
+                }
+            }
+
+        }
     }
+}
+
+footer {
+    width: 100%;
+    background-color: $color-primary;
+    margin: 0;
 }
 
 @media screen and (max-width:1300px) {
@@ -569,6 +650,102 @@ header {
                     width: 800px;
                     height: auto;
                 }
+            }
+        }
+    }
+
+    #reservas {
+        width: 100%;
+        min-height: 600px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+
+        .reservas-container {
+            width: 95%;
+            margin: 2rem;
+            border: double $color-primary;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            overflow-x: hidden;
+            align-items: center;
+            height: auto;
+            position: relative;
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                min-width: 60%;
+                height: 100%;
+
+                padding: 3rem;
+                z-index: 1;
+
+
+                h2 {
+                    font-family: $font-two;
+                    font-size: 3rem;
+                    font-weight: bold;
+                    margin-bottom: 2rem;
+                    color: $color-secondary;
+                }
+
+                .calendar-container {
+                    margin-top: 4rem;
+                    width: 50%;
+                    margin-left: 10rem;
+
+                }
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 40%;
+
+                label {
+                    display: flex;
+                    flex-direction: column;
+                    font-family: $font-two;
+                    font-weight: 600;
+                    font-size: 1.1rem;
+                    color: $color-primary;
+                    margin: 0.5rem 0;
+
+                    img {
+                        width: 30px;
+                        height: auto;
+                    }
+
+                    input {
+                        width: 30%;
+                        border: none;
+                        border-bottom: 1px solid $color-primary;
+                    }
+                }
+
+                button {
+                    width: 50%;
+                    border: double 0.5rem $color-secondary;
+
+                    background-color: white;
+                    color: $color-secondary;
+                    font-family: $font-two;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    margin: 0.5rem 0;
+                    padding: 1rem;
+                    transition: all 0.3s ease-in-out;
+
+                    &:hover {
+                        background-color: #5d2502;
+                        color: white;
+                        border: double 0.5rem white;
+                    }
+                }
+
             }
         }
     }
@@ -820,6 +997,201 @@ header {
             display: flex;
 
 
+        }
+    }
+
+    #reservas {
+        width: 100%;
+        min-height: 600px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+
+        .reservas-container {
+            width: 95%;
+            margin: 2rem;
+            border: double $color-primary;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            overflow-x: hidden;
+            align-items: center;
+            height: auto;
+            position: relative;
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                min-width: 50%;
+                height: 50%;
+
+                padding: 3rem;
+                z-index: 1;
+
+
+                h2 {
+                    font-family: $font-two;
+                    font-size: 3rem;
+                    font-weight: bold;
+                    margin-bottom: 2rem;
+                    color: $color-secondary;
+                }
+
+                .calendar-container {
+                    margin-top: 4rem;
+                    width: 100%;
+                    margin-left: 1rem;
+
+                }
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 60%;
+
+                label {
+                    display: flex;
+                    flex-direction: column;
+                    font-family: $font-two;
+                    font-weight: 600;
+                    font-size: 1.1rem;
+                    color: $color-primary;
+                    margin: 0.5rem 0;
+
+                    img {
+                        width: 30px;
+                        height: auto;
+                    }
+
+                    input {
+                        width: 30%;
+                        border: none;
+                        border-bottom: 1px solid $color-primary;
+                    }
+                }
+
+                button {
+                    width: 50%;
+                    border: double 0.5rem $color-secondary;
+
+                    background-color: white;
+                    color: $color-secondary;
+                    font-family: $font-two;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    margin: 0.5rem 0;
+                    padding: 1rem;
+                    transition: all 0.3s ease-in-out;
+
+                    &:hover {
+                        background-color: #5d2502;
+                        color: white;
+                        border: double 0.5rem white;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    #reservas {
+        width: 100%;
+        min-height: 600px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+
+        .reservas-container {
+            width: 95%;
+            margin: 1rem;
+            border: double $color-primary;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow-x: hidden;
+            align-items: center;
+            height: auto;
+            position: relative;
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                min-width: 50%;
+                height: 100%;
+
+                padding: 1rem;
+                z-index: 1;
+
+
+                h2 {
+                    font-family: $font-two;
+                    font-size: 3rem;
+                    font-weight: bold;
+                    margin-bottom: 2rem;
+                    color: $color-secondary;
+                }
+
+                .calendar-container {
+                    margin-top: 4rem;
+                    width: 100%;
+                    margin-left: 1rem;
+
+                }
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 60%;
+                height: 50%;
+
+                label {
+                    display: flex;
+                    flex-direction: column;
+                    font-family: $font-two;
+                    font-weight: 600;
+                    font-size: 1.1rem;
+                    color: $color-primary;
+                    margin: 0.5rem 0;
+
+                    img {
+                        width: 30px;
+                        height: auto;
+                    }
+
+                    input {
+                        width: 100%;
+                        border: none;
+                        border-bottom: 1px solid $color-primary;
+                    }
+                }
+
+                button {
+                    width: 100%;
+                    border: double 0.5rem $color-secondary;
+
+                    background-color: white;
+                    color: $color-secondary;
+                    font-family: $font-two;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    margin: 0.5rem 0;
+                    padding: 1rem;
+                    transition: all 0.3s ease-in-out;
+
+                    &:hover {
+                        background-color: #5d2502;
+                        color: white;
+                        border: double 0.5rem white;
+                    }
+                }
+
+            }
         }
     }
 }

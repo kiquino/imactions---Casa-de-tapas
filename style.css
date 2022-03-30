@@ -529,12 +529,106 @@ header #inicio .cta .button-cta a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   overflow-x: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: auto;
   position: relative;
+}
+
+#reservas .reservas-container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 50%;
+  height: 100%;
+  padding: 3rem;
+  z-index: 1;
+}
+
+#reservas .reservas-container .content h2 {
+  font-family: "Merriweather";
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #5d2502;
+}
+
+#reservas .reservas-container .content .calendar-container {
+  margin-top: 4rem;
+  width: 40%;
+  margin-left: 10rem;
+}
+
+#reservas .reservas-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
+#reservas .reservas-container form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Merriweather";
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #d67d19;
+  margin: 0.5rem 0;
+}
+
+#reservas .reservas-container form label img {
+  width: 30px;
+  height: auto;
+}
+
+#reservas .reservas-container form label input {
+  width: 30%;
+  border: none;
+  border-bottom: 1px solid #d67d19;
+}
+
+#reservas .reservas-container form button {
+  width: 30%;
+  border: double 0.5rem #5d2502;
+  background-color: white;
+  color: #5d2502;
+  font-family: "Merriweather";
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#reservas .reservas-container form button:hover {
+  background-color: #5d2502;
+  color: white;
+  border: double 0.5rem white;
+}
+
+footer {
+  width: 100%;
+  background-color: #d67d19;
+  margin: 0;
 }
 
 @media screen and (max-width: 1300px) {
@@ -647,6 +741,116 @@ header #inicio .cta .button-cta a {
   #menu .menu-container .decor img {
     width: 800px;
     height: auto;
+  }
+  #reservas {
+    width: 100%;
+    min-height: 600px;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  #reservas .reservas-container {
+    width: 95%;
+    margin: 2rem;
+    border: double #d67d19;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    overflow-x: hidden;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+    position: relative;
+  }
+  #reservas .reservas-container .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-width: 60%;
+    height: 100%;
+    padding: 3rem;
+    z-index: 1;
+  }
+  #reservas .reservas-container .content h2 {
+    font-family: "Merriweather";
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #5d2502;
+  }
+  #reservas .reservas-container .content .calendar-container {
+    margin-top: 4rem;
+    width: 50%;
+    margin-left: 10rem;
+  }
+  #reservas .reservas-container form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 40%;
+  }
+  #reservas .reservas-container form label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-family: "Merriweather";
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #d67d19;
+    margin: 0.5rem 0;
+  }
+  #reservas .reservas-container form label img {
+    width: 30px;
+    height: auto;
+  }
+  #reservas .reservas-container form label input {
+    width: 30%;
+    border: none;
+    border-bottom: 1px solid #d67d19;
+  }
+  #reservas .reservas-container form button {
+    width: 50%;
+    border: double 0.5rem #5d2502;
+    background-color: white;
+    color: #5d2502;
+    font-family: "Merriweather";
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  #reservas .reservas-container form button:hover {
+    background-color: #5d2502;
+    color: white;
+    border: double 0.5rem white;
   }
 }
 
@@ -904,6 +1108,230 @@ header #inicio .cta .button-cta a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  #reservas {
+    width: 100%;
+    min-height: 600px;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  #reservas .reservas-container {
+    width: 95%;
+    margin: 2rem;
+    border: double #d67d19;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    overflow-x: hidden;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+    position: relative;
+  }
+  #reservas .reservas-container .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-width: 50%;
+    height: 50%;
+    padding: 3rem;
+    z-index: 1;
+  }
+  #reservas .reservas-container .content h2 {
+    font-family: "Merriweather";
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #5d2502;
+  }
+  #reservas .reservas-container .content .calendar-container {
+    margin-top: 4rem;
+    width: 100%;
+    margin-left: 1rem;
+  }
+  #reservas .reservas-container form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 60%;
+  }
+  #reservas .reservas-container form label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-family: "Merriweather";
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #d67d19;
+    margin: 0.5rem 0;
+  }
+  #reservas .reservas-container form label img {
+    width: 30px;
+    height: auto;
+  }
+  #reservas .reservas-container form label input {
+    width: 30%;
+    border: none;
+    border-bottom: 1px solid #d67d19;
+  }
+  #reservas .reservas-container form button {
+    width: 50%;
+    border: double 0.5rem #5d2502;
+    background-color: white;
+    color: #5d2502;
+    font-family: "Merriweather";
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  #reservas .reservas-container form button:hover {
+    background-color: #5d2502;
+    color: white;
+    border: double 0.5rem white;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #reservas {
+    width: 100%;
+    min-height: 600px;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  #reservas .reservas-container {
+    width: 95%;
+    margin: 1rem;
+    border: double #d67d19;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    overflow-x: hidden;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+    position: relative;
+  }
+  #reservas .reservas-container .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-width: 50%;
+    height: 100%;
+    padding: 1rem;
+    z-index: 1;
+  }
+  #reservas .reservas-container .content h2 {
+    font-family: "Merriweather";
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #5d2502;
+  }
+  #reservas .reservas-container .content .calendar-container {
+    margin-top: 4rem;
+    width: 100%;
+    margin-left: 1rem;
+  }
+  #reservas .reservas-container form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 60%;
+    height: 50%;
+  }
+  #reservas .reservas-container form label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-family: "Merriweather";
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #d67d19;
+    margin: 0.5rem 0;
+  }
+  #reservas .reservas-container form label img {
+    width: 30px;
+    height: auto;
+  }
+  #reservas .reservas-container form label input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #d67d19;
+  }
+  #reservas .reservas-container form button {
+    width: 100%;
+    border: double 0.5rem #5d2502;
+    background-color: white;
+    color: #5d2502;
+    font-family: "Merriweather";
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  #reservas .reservas-container form button:hover {
+    background-color: #5d2502;
+    color: white;
+    border: double 0.5rem white;
   }
 }
 /*# sourceMappingURL=style.css.map */

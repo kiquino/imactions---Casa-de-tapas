@@ -10,6 +10,9 @@
     <meta name="og:image" content="https://www.collinsdictionary.com/images/thumb/restaurant_135621509_250.jpg" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dist/cal-style.css">
+    <link rel="stylesheet" href="dist/theme.css">
+
     <title>La Casona de Diego</title>
 </head>
 
@@ -277,14 +280,93 @@
         </section>
         <section id="reservas">
             <div class="reservas-container">
+                <div class="content">
+                    <h2>Reservas</h2>
+                    <div class="calendar-container">
 
+                    </div>
+                </div>
+                <form action="">
+                    <label for="date">Fecha
+                        <img src="1651857_calendar_christmas_date_december_icon.svg" alt="">
+                        <input name="date" id="date" type="text" disabled>
+                    </label>
+                    <label for="time">Fecha
+                        <img src="172584_clock_icon.svg" alt="">
+                        <input name="time" id="time" type="time">
+                    </label>
+                    <label for="ammount">N° Comensales
+                        <img src="3289574_clan_family_group_peer_people_icon.svg" alt="">
+                        <input name="ammount" type="number">
+                    </label>
+                    <label for="nombre">Nombre de la Reserva
+
+                        <input name="nombre" type="text">
+                    </label>
+                    <button>Reservar</button>
+                </form>
             </div>
         </section>
     </main>
-
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="">
+                </div>
+                <div class="footer-menu">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Sobre
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Contato
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Reservas
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js">
     </script>
     <script src="script.js"></script>
+    <script src="dist/calendar.min.js"></script>
+
+
 </body>
 
 </html>
